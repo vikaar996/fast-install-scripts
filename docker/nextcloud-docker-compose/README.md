@@ -3,13 +3,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Create
 
-mkdir -p \
-/tmp/nextcloud/skeleton-empty \
-/tmp/nextcloud/custom_apps \
-/tmp/nextcloud/themes \
-/tmp/nextcloud/config \
-/tmp/postgres/data \
-/tmp/nextcloud/data
+<pre> ```bash mkdir -p \ /tmp/nextcloud/skeleton-empty \ /tmp/nextcloud/custom_apps \ /tmp/nextcloud/themes \ /tmp/nextcloud/config \ /tmp/postgres/data \ /tmp/nextcloud/data ``` </pre>
 
 
 
