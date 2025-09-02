@@ -1,11 +1,6 @@
 # Steps
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Create
-
-mkdir -p /tmp/nextcloud/skeleton-empty /tmp/nextcloud/custom_apps /tmp/nextcloud/themes /tmp/nextcloud/config /tmp/postgres/data /tmp/nextcloud/data
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Install nginx
 
@@ -53,6 +48,21 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo nginx -t
 
 sudo systemctl reload nginx
+
+sudo apt install certbot python3-certbot-nginx -y
+	  
+sudo certbot --nginx -d name_domain
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Create
+
+mkdir -p /tmp/nextcloud/skeleton-empty /tmp/nextcloud/custom_apps /tmp/nextcloud/themes /tmp/nextcloud/config /tmp/postgres/data /tmp/nextcloud/data
+
+
+
+
+
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
